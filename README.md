@@ -105,3 +105,12 @@ ai-knowledge-assistant/
 6. ¿Por qué el servicio del asistente está separado del router?
 7. ¿Qué diferencia existe entre Git y GitHub?
 8. ¿Qué cambiará en el próximo módulo cuando se conecte un LLM real y qué debería permanecer estable?
+
+## Script de demostración AsyncIO/HTTPX
+
+```bash
+python scripts/demo_async.py
+```
+
+Lanza varias preguntas de forma concurrente con `asyncio.gather` y un cliente
+HTTPX asíncrono, sin necesidad de levantar el servidor.

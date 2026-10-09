@@ -1,4 +1,3 @@
-cat > app/api/routes/info.py << 'EOF'
 from fastapi import APIRouter
 
 from app.schemas.info import InfoResponse
@@ -14,4 +13,3 @@ async def info() -> InfoResponse:
         environment="development",
         llm_enabled=False,
     )
-EOF
